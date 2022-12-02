@@ -1,5 +1,10 @@
 # meta-xilinx/meta-xilinx-core/recipes-bsp/u-boot
 
+1. poky/meta defines the base `u-boot` recipe
+2. `u-boot.bbappends` modifies the base `u-boot` recipe with `do_zynq_platform_init()` function
+3. `u-boot-xlnx.bb` appends/prepends the `u-boot` recipes tasks.
+4. `zynqmp-generic.conf` defines `meta-xilinx-core` as a BSP layer that depends on `u-boot` recipes and includes recipes for generating zynq-specific u-boot scripts
+
 ```mermaid
 flowchart TD
 subgraph poky
@@ -59,6 +64,13 @@ u-boot-xlnx.inc-..->|requires|u-boot-xlnx-blob.inc
 u-boot-xlnx.bb-..->|include|u-boot-xlnx.inc
 u-boot-xlnx.bb-..->|include|u-boot-spl-zynq-init.inc
 ```
+
+
+Custom layer should 
+1. Modify `local.conf` to use `MACHINE` name defined in `zynqmp-generic.conf`
+2. Add `recipes-bsp/u-boot` recipe (to implicitly include the recipe from `meta-xilinx-core`) 
+
+#### Raw mermaid 
 
 ```
 flowchart TD

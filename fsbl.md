@@ -1,4 +1,4 @@
-The yaml file is written in `xsctyaml.bbclass` but some of its attributes are set elsewhere e.g. `meta-xilinx-tools/recipes-bsp/device-tree/device-tree.bbappend`. Clearly the `device-tree` recipe must be run before `fsbl` receipe, but its not clear where that dependency is defined (maybe it has to be explicitly set as a dependency in local.conf?)
+The yaml file is written in `meta-xilinx-tools/classes/xsctyaml.bbclass` but some of its attributes are set elsewhere e.g. `meta-xilinx-tools/recipes-bsp/device-tree/device-tree.bbappend`. Clearly the `device-tree` recipe must be run before `fsbl` receipe, but its not clear where that dependency is defined (maybe it has to be explicitly set as a dependency in local.conf?)
 
 ```mermaid
 flowchart LR

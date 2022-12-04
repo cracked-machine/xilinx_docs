@@ -104,17 +104,17 @@ fsbl-firmware.yaml -->|reads|meta-xilinx-tools_classes_xsctbase_do_configure
 meta-xilinx-tools_classes_xsctbase_do_configure -->|output|fsbl-firmware.elf
 
 %% fsbl recipe style
-style meta-xilinx-core_fsbl.bb fill:#000099
-style meta-xilinx-tools_fsbl.bbappend fill:#000099
-style meta-xilinx-standalone_fsbl.bbappend fill:#000099
+style meta-xilinx-core_fsbl.bb fill:#000099,color:white
+style meta-xilinx-tools_fsbl.bbappend fill:#000099,color:white
+style meta-xilinx-standalone_fsbl.bbappend fill:#000099,color:white
 
 %% fsbl-firmware style
-style meta-xilinx-standalone_fsbl-firmware.bb fill:#004d1a
-style meta-xilinx-standalone_fsbl-firmware.inc fill:#004d1a
-style meta-xilinx-tools_fsbl-firmware.bbappend fill:#004d1a
+style meta-xilinx-standalone_fsbl-firmware.bb fill:#004d1a,color:white
+style meta-xilinx-standalone_fsbl-firmware.inc fill:#004d1a,color:white
+style meta-xilinx-tools_fsbl-firmware.bbappend fill:#004d1a,color:white
 
 %% all classes
-style meta-xilinx-standalone_xlnx-embeddedsw.bbclass fill:#330000
-style meta-xilinx-tools_classes_xsctapp.bbclass fill:#330000
-style meta-xilinx-tools_classes_xsctyaml.bbclass fill:#330000
-style meta-xilinx-tools_classes_xsctbase.bbclass fill:#330000
+style meta-xilinx-standalone_xlnx-embeddedsw.bbclass fill:#660000,color:white
+style meta-xilinx-tools_classes_xsctapp.bbclass fill:#660000,color:white
+style meta-xilinx-tools_classes_xsctyaml.bbclass fill:#660000,color:white
+style meta-xilinx-tools_classes_xsctbase.bbclass fill:#660000,color:white
